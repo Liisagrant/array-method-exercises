@@ -23,19 +23,21 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_liter
 
 const people = [
   {
-    firstName: 'Ola',
-    lastName: 'Nordmann',
+    firstName: "Ola",
+    lastName: "Nordmann",
   },
   {
-    firstName: 'Kari',
-    lastName: 'Nordmann',
+    firstName: "Kari",
+    lastName: "Nordmann",
   },
   {
-    firstName: 'Nora',
-    lastName: 'Nordmann',
+    firstName: "Nora",
+    lastName: "Nordmann",
   },
 ];
 
-const greetingMessages = null; // Replace null and add .map code here
+const greetingMessages = people.map(
+  ({ firstName, lastName }) => `Hello ${firstName} ${lastName}`
+);
 
 console.log(greetingMessages);

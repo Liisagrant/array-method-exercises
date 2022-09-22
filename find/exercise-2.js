@@ -18,21 +18,21 @@ Find the person with an id of 1 and set that to the supplied
 const people = [
   {
     id: 0,
-    firstName: 'Ola',
-    lastName: 'Nordmann',
+    firstName: "Ola",
+    lastName: "Nordmann",
   },
   {
     id: 1,
-    firstName: 'Kari',
-    lastName: 'Nordmann',
+    firstName: "Kari",
+    lastName: "Nordmann",
   },
   {
     id: 2,
-    firstName: 'Nora',
-    lastName: 'Nordmann',
+    firstName: "Nora",
+    lastName: "Nordmann",
   },
 ];
 
-const foundPerson = null; // Replace null and add .map code here
+const foundPerson = people.find((people) => people.id === 1);
 
 console.log(foundPerson);
